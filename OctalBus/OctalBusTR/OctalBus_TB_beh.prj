@@ -1,0 +1,2 @@
+vhdl work "OctalBus.vhd"
+vhdl work "OctalBus_TB.vhd"

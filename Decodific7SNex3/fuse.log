@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/Decodific7SNex3/SevenSegTBench_isim_beh.exe -prj C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/Decodific7SNex3/SevenSegTBench_beh.prj SevenSegTBench 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/Decodific7SNex3/Decodificador7SegHex.vhd" into library work
+Parsing VHDL file "C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/Decodific7SNex3/SevenSegTBench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 105644 KB
+Fuse CPU Usage: 374 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity Decodificador7SegHex [decodificador7seghex_default]
+Compiling architecture behavior of entity sevensegtbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/Decodific7SNex3/SevenSegTBench_isim_beh.exe
+Fuse Memory Usage: 114584 KB
+Fuse CPU Usage: 436 ms

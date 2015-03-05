@@ -1,0 +1,2 @@
+vhdl isim_temp "OctalBus.vhd"
+vhdl isim_temp "OctalBus_TB.vhd"

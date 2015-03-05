@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Feb 27 11:52:27 2015
+
+drc -z Decodificador7SegHex.ncd Decodificador7SegHex.pcf
+
+DRC detected 0 errors and 0 warnings.

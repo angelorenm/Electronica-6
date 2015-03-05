@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/OctalBus/OctalBusTR/OctalBus_main.xst" -ofn "C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/OctalBus/OctalBusTR/OctalBus_main.syr" 

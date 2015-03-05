@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/Decodific7SNex3/SevenSegTBench_isim_beh.exe" -prj "C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/Decodific7SNex3/SevenSegTBench_beh.prj" "SevenSegTBench" 

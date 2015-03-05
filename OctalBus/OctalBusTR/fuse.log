@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/OctalBus/OctalBusTR/OctalBus_TB_isim_beh.exe -prj C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/OctalBus/OctalBusTR/OctalBus_TB_beh.prj OctalBus_TB 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/OctalBus/OctalBusTR/OctalBus.vhd" into library work
+Parsing VHDL file "C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/OctalBus/OctalBusTR/OctalBus_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 106412 KB
+Fuse CPU Usage: 373 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity OctalBus [octalbus_default]
+Compiling architecture behavior of entity octalbus_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/Angel/PracticasE6/Tarea1/Decodificador7Seg/OctalBus/OctalBusTR/OctalBus_TB_isim_beh.exe
+Fuse Memory Usage: 115352 KB
+Fuse CPU Usage: 420 ms

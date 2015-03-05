@@ -1,0 +1,29 @@
+Command line:
+   SevenSegTBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56131
+
+Tue Mar 03 10:37:56 2015
+
+
+ Elaboration Time: 0.296402 sec
+
+ Current Memory Usage: 669.471 Meg
+
+ Total Signals          : 4
+ Total Nets             : 11
+ Total Signal Drivers   : 2
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 372
+Total Line Count : 37
+
+ Total Simulation Time: 0.468003 sec
+
+ Current Memory Usage: 669.471 Meg
+
+Tue Mar 03 10:50:38 2015
+

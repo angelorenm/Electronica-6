@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Angel\PracticasE6\Tarea1\Decodificador7Seg\Decodific7SNex3\Decodificador7SegHex.ncd
+OUTFILE=C:\Users\Angel\PracticasE6\Tarea1\Decodificador7Seg\Decodific7SNex3\Decodificador7SegHex.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Users\Angel\PracticasE6\Tarea1\Decodificador7Seg\Decodific7SNex3
+LICENSE=WebPack
+USER_INFO=211008986_0_0_152
