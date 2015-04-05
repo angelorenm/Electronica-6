@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Angel/PracticasE6/Tarea2/descripcion de hardware (II)/Memoria_ROM/ROM_TB_isim_beh.exe" -prj "C:/Users/Angel/PracticasE6/Tarea2/descripcion de hardware (II)/Memoria_ROM/ROM_TB_beh.prj" "work.ROM_TB" 
