@@ -1,0 +1,489 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: DAC_MEM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DAC_MEM.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DAC_MEM"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : DAC_MEM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Angel\PracticasE6\Tarea1\archivos tarea1\SPI_MEMORIA\TOP-SINTHESIS.vhd" into library work
+Parsing entity <DAC_MEM>.
+Parsing architecture <Behavioral> of entity <dac_mem>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <DAC_MEM> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Angel\PracticasE6\Tarea1\archivos tarea1\SPI_MEMORIA\TOP-SINTHESIS.vhd" Line 4242: index_counter should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Angel\PracticasE6\Tarea1\archivos tarea1\SPI_MEMORIA\TOP-SINTHESIS.vhd" Line 4243: index_counter should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DAC_MEM>.
+    Related source file is "C:\Users\Angel\PracticasE6\Tarea1\archivos tarea1\SPI_MEMORIA\TOP-SINTHESIS.vhd".
+        DATA_WIDTH = 12
+        ADDRES_WIDTH = 12
+    Set property "rom_style = block" for signal <DATA1<11>>.
+    Set property "rom_style = block" for signal <DATA1<10>>.
+    Set property "rom_style = block" for signal <DATA1<9>>.
+    Set property "rom_style = block" for signal <DATA1<8>>.
+    Set property "rom_style = block" for signal <DATA1<7>>.
+    Set property "rom_style = block" for signal <DATA1<6>>.
+    Set property "rom_style = block" for signal <DATA1<5>>.
+    Set property "rom_style = block" for signal <DATA1<4>>.
+    Set property "rom_style = block" for signal <DATA1<3>>.
+    Set property "rom_style = block" for signal <DATA1<2>>.
+    Set property "rom_style = block" for signal <DATA1<1>>.
+    Set property "rom_style = block" for signal <DATA1<0>>.
+    Set property "rom_style = block" for signal <DATA2<11>>.
+    Set property "rom_style = block" for signal <DATA2<10>>.
+    Set property "rom_style = block" for signal <DATA2<9>>.
+    Set property "rom_style = block" for signal <DATA2<8>>.
+    Set property "rom_style = block" for signal <DATA2<7>>.
+    Set property "rom_style = block" for signal <DATA2<6>>.
+    Set property "rom_style = block" for signal <DATA2<5>>.
+    Set property "rom_style = block" for signal <DATA2<4>>.
+    Set property "rom_style = block" for signal <DATA2<3>>.
+    Set property "rom_style = block" for signal <DATA2<2>>.
+    Set property "rom_style = block" for signal <DATA2<1>>.
+    Set property "rom_style = block" for signal <DATA2<0>>.
+WARNING:Xst:647 - Input <CHSEL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 12-bit register for signal <INDEX_COUNTER>.
+    Found 12-bit adder for signal <INDEX_COUNTER[11]_GND_4_o_add_0_OUT> created at line 4229.
+    Found 4096x12-bit Read Only RAM for signal <_n4147>
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DATA1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred  12 Latch(s).
+Unit <DAC_MEM> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4096x12-bit single-port Read Only RAM                 : 1
+# Adders/Subtractors                                   : 1
+ 12-bit adder                                          : 1
+# Registers                                            : 1
+ 12-bit register                                       : 1
+# Latches                                              : 12
+ 1-bit latch                                           : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DAC_MEM>.
+The following registers are absorbed into counter <INDEX_COUNTER>: 1 register on signal <INDEX_COUNTER>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n4147> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 12-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <INDEX_COUNTER> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <DAC_MEM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4096x12-bit single-port distributed Read Only RAM     : 1
+# Counters                                             : 1
+ 12-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DAC_MEM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DAC_MEM, actual ratio is 6.
+Latch DATA1_11 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_10 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_9 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_8 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_7 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_6 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_5 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_4 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_3 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_2 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DATA1_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DAC_MEM.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 859
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 10
+#      LUT2                        : 3
+#      LUT3                        : 19
+#      LUT4                        : 11
+#      LUT5                        : 54
+#      LUT6                        : 581
+#      MUXCY                       : 11
+#      MUXF7                       : 109
+#      MUXF8                       : 46
+#      VCC                         : 1
+#      XORCY                       : 12
+# FlipFlops/Latches                : 36
+#      FDCE                        : 12
+#      LD                          : 24
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 2
+#      OBUF                        : 25
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              12  out of  18224     0%  
+ Number of Slice LUTs:                  679  out of   9112     7%  
+    Number used as Logic:               679  out of   9112     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    680
+   Number with an unused Flip Flop:     668  out of    680    98%  
+   Number with an unused LUT:             1  out of    680     0%  
+   Number of fully used LUT-FF pairs:    11  out of    680     1%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  28  out of    232    12%  
+    IOB Flip Flops/Latches:              24
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+DONE                               | IBUF+BUFG              | 24    |
+CLK                                | BUFGP                  | 12    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.960ns (Maximum Frequency: 252.557MHz)
+   Minimum input arrival time before clock: 2.855ns
+   Maximum output required time after clock: 4.174ns
+   Maximum combinational path delay: 5.337ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.960ns (frequency: 252.557MHz)
+  Total number of paths / destination ports: 78 / 12
+-------------------------------------------------------------------------
+Delay:               3.960ns (Levels of Logic = 13)
+  Source:            INDEX_COUNTER_0 (FF)
+  Destination:       INDEX_COUNTER_11 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: INDEX_COUNTER_0 to INDEX_COUNTER_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q           450   0.525   2.452  INDEX_COUNTER_0 (INDEX_COUNTER_0)
+     INV:I->O              1   0.255   0.000  Mcount_INDEX_COUNTER_lut<0>_INV_0 (Mcount_INDEX_COUNTER_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcount_INDEX_COUNTER_cy<0> (Mcount_INDEX_COUNTER_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<1> (Mcount_INDEX_COUNTER_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<2> (Mcount_INDEX_COUNTER_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<3> (Mcount_INDEX_COUNTER_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<4> (Mcount_INDEX_COUNTER_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<5> (Mcount_INDEX_COUNTER_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<6> (Mcount_INDEX_COUNTER_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<7> (Mcount_INDEX_COUNTER_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<8> (Mcount_INDEX_COUNTER_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_INDEX_COUNTER_cy<9> (Mcount_INDEX_COUNTER_cy<9>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_INDEX_COUNTER_cy<10> (Mcount_INDEX_COUNTER_cy<10>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_INDEX_COUNTER_xor<11> (Result<11>)
+     FDCE:D                    0.074          INDEX_COUNTER_11
+    ----------------------------------------
+    Total                      3.960ns (1.508ns logic, 2.452ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              2.855ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       INDEX_COUNTER_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to INDEX_COUNTER_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.328   1.068  RESET_IBUF (RESET_IBUF)
+     FDCE:CLR                  0.459          INDEX_COUNTER_0
+    ----------------------------------------
+    Total                      2.855ns (1.787ns logic, 1.068ns route)
+                                       (62.6% logic, 37.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DONE'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 1)
+  Source:            DATA1_11_1 (LATCH)
+  Destination:       DATA1<11> (PAD)
+  Source Clock:      DONE falling
+
+  Data Path: DATA1_11_1 to DATA1<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.581   0.681  DATA1_11_1 (DATA1_11_1)
+     OBUF:I->O                 2.912          DATA1_11_OBUF (DATA1<11>)
+    ----------------------------------------
+    Total                      4.174ns (3.493ns logic, 0.681ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.337ns (Levels of Logic = 2)
+  Source:            DONE (PAD)
+  Destination:       START (PAD)
+
+  Data Path: DONE to START
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.328   1.097  DONE_IBUF (START_OBUF)
+     OBUF:I->O                 2.912          START_OBUF (START)
+    ----------------------------------------
+    Total                      5.337ns (4.240ns logic, 1.097ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.960|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DONE
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |   11.859|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 68.00 secs
+Total CPU time to Xst completion: 68.57 secs
+ 
+--> 
+
+Total memory usage is 237512 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

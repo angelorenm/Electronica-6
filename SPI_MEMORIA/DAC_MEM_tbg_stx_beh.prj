@@ -1,0 +1,2 @@
+vhdl isim_temp "TOP-SINTHESIS.vhd"
+vhdl isim_temp "DAC_MEM_tbg.vhd"

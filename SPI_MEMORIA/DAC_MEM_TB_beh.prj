@@ -1,0 +1,2 @@
+vhdl work "TOP-SINTHESIS.vhd"
+vhdl work "DAC_MEM_TB.vhd"

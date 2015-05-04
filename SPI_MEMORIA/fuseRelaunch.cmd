@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Angel/PracticasE6/Tarea1/archivos tarea1/SPI_MEMORIA/DAC_MEM_TB_isim_beh.exe" -prj "C:/Users/Angel/PracticasE6/Tarea1/archivos tarea1/SPI_MEMORIA/DAC_MEM_TB_beh.prj" "work.DAC_MEM_TB" 
